@@ -5,6 +5,7 @@ import 'package:http/http.dart' as http;
 part 'model/function.dart';
 
 class HttpRequests {
+  /// Sends an HTTP GET request.
   static get(String url,
       {Map<String, String>? headers,
       Map<String, String>? cookies,
@@ -46,6 +47,7 @@ class HttpRequests {
     return HttpResponse(response);
   }
 
+  /// Sends an HTTP POST request.
   static post(String url,
       {Map<String, String>? headers,
       Map<String, dynamic>? data,
@@ -88,6 +90,7 @@ class HttpRequests {
     return HttpResponse(response);
   }
 
+  /// Sends an HTTP PUT request.
   static put(String url,
       {Map<String, String>? headers,
       Map<String, dynamic>? data,
@@ -130,6 +133,7 @@ class HttpRequests {
     return HttpResponse(response);
   }
 
+  /// Sends an HTTP PATCH request.
   static patch(String url,
       {Map<String, String>? headers,
       Map<String, dynamic>? data,
@@ -172,6 +176,7 @@ class HttpRequests {
     return HttpResponse(response);
   }
 
+  /// Sends an HTTP DELETE request.
   static delete(String url,
       {Map<String, String>? headers,
       Map<String, dynamic>? data,
@@ -214,6 +219,7 @@ class HttpRequests {
     return HttpResponse(response);
   }
 
+  /// Sends an HTTP HEAD request.
   static head(String url,
       {Map<String, String>? headers,
       Map<String, String>? cookies,

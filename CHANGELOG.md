@@ -1,8 +1,12 @@
+## 3.0.1
+- Improve Documentation
+
 ## 3.0.0
 - Add support for `put`,`patch` and `delete` method 
 - Add `persistentConnection` and  `reasonPhrase` method in Response
 ### Breaking changes
 - `Response` class change with `HttpResponse` to reduce conflict with Http Package
+- Dart 3.0 Required
 
 ## 2.6.0
 - Add support `head` method

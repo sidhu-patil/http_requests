@@ -1,3 +1,4 @@
+/// HttpRequest Exception Class
 class HttpRequestException implements Exception {
   String message;
   String code;

@@ -1,19 +1,11 @@
 name: http_requests
 description:  HTTP Requests Package Inspired By Python Requests Module Which Is Used For To Make Http Request And Get Response. You Can Use It In Rest Api
-version: 3.0.0
+version: 3.0.1
 homepage: https://github.com/secanonm/http_requests
 environment:
-  sdk: ">=2.12.0 <3.0.0"
-  flutter: ">=1.17.0"
+  sdk: ">=3.0.0 <4.0.0"
 
 dependencies:
-  flutter:
-    sdk: flutter
-    
   http: ^1.1.0
-
-dev_dependencies:
-  flutter_test:
-    sdk: flutter
 
 flutter:
