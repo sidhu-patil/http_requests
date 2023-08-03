@@ -1,54 +1,54 @@
-## 3.0.1
-- Improve Documentation
+## 3.1.0
+- Improved Documentation.
+- Added new exception `INVALID_JSON` to handle cases of invalid JSON format.
 
 ## 3.0.0
-- Add support for `put`,`patch` and `delete` method 
-- Add `persistentConnection` and  `reasonPhrase` method in Response
+- Added support for `put`, `patch`, and `delete` methods.
+- Added `persistentConnection` and `reasonPhrase` methods in the `HttpResponse`.
 ### Breaking changes
-- `Response` class change with `HttpResponse` to reduce conflict with Http Package
-- Dart 3.0 Required
+- Renamed `Response` class to `HttpResponse` to reduce conflicts with `HTTP Package`. 
+- Dart 3.0 is now required.
 
 ## 2.6.0
-- Add support `head` method
+- Added support for the `head` method.
 
 ## 2.5.0
-- Add Error Handling
-- Improve Cookie Feature 
+- Added Error Handling.
+- Improved Cookie Feature.
 ### Breaking changes
-- Change `status` method to `statusCode`
-- Now `status` return status code with description of code
+- Renamed `status` method to `statusCode`.
+- `statusCode` now returns the status code along with its description.
 
 ## 2.0.1
-- stable version
+- Stable version.
 
 ## 1.5.0
-- No Internet Json return {status: failed}
+- If there's no internet connection, the library now returns a JSON object with `{status: failed}`. @depreciated
 
 ## 1.4.0
-- Improve Json Function
+- Improved the Json Function.
 
 ## 1.3.0
-- Add Cookie Feature
+- Added Cookie Feature.
 
 ## 1.2.0
-- Add Request Timeout Feature
+- Added Request Timeout Feature.
 
 ## 1.0.1
-- Add API References to make easy to learn
+- Added API References to make it easier to learn.
 
 ## 1.0.0
-- Improve Error Handling 
+- Improved Error Handling.
 
 ## 0.0.4 
-- Add Documentation 
-- More Examples
+- Added Documentation.
+- More Examples.
 
 ## 0.0.3 
-- Improve, add more function 
-- Make easy to use 
+- Improved and added more functions to make it easier to use.
 
 ## 0.0.2
-- Improve & fix bugs 
+- Improved and fixed bugs.
 
 ## 0.0.1
-- Beta version 
+- Beta version.

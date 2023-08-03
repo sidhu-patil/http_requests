@@ -4,6 +4,7 @@ import 'exception.dart';
 import 'package:http/http.dart' as http;
 part 'model/function.dart';
 
+/// Simply Class To Send HTTP Requests
 class HttpRequests {
   /// Sends an HTTP GET request.
   static get(String url,
@@ -26,20 +27,20 @@ class HttpRequests {
           .get(parseUrl, headers: headers)
           .timeout(Duration(seconds: timeout), onTimeout: () {
         throw HttpRequestException(
-          code: 'timeout',
+          code: 'TIMEOUT',
           message:
               'A connection timeout ( The server at $url is taking too long to response. ) The requested site did not response to a connection request and http request has stopped waiting for a reply',
         );
       });
     } on FormatException {
       throw HttpRequestException(
-        code: 'invalid url',
+        code: 'INVALID_URL',
         message:
             'The requested url is invalid ( Please enter valid url or hostname ).',
       );
     } catch (e) {
       throw HttpRequestException(
-        code: 'unreachable',
+        code: 'UNREACHABLE',
         message:
             'A network error (such as interrupted connection or host $url unreachable ) has occurred.',
       );
@@ -69,20 +70,20 @@ class HttpRequests {
           .post(parseUrl, body: data, headers: headers)
           .timeout(Duration(seconds: timeout), onTimeout: () {
         throw HttpRequestException(
-          code: 'timeout',
+          code: 'TIMEOUT',
           message:
               'A connection timeout ( The server at $url is taking too long to response. ) The requested site did not response to a connection request and http request has stopped waiting for a reply',
         );
       });
     } on FormatException {
       throw HttpRequestException(
-        code: 'invalid url',
+        code: 'INVALID_URL',
         message:
             'The requested url is invalid ( Please enter valid url or hostname ).',
       );
     } catch (e) {
       throw HttpRequestException(
-        code: 'unreachable',
+        code: 'UNREACHABLE',
         message:
             'A network error (such as interrupted connection or host $url unreachable ) has occurred.',
       );
@@ -112,20 +113,20 @@ class HttpRequests {
           .put(parseUrl, body: data, headers: headers)
           .timeout(Duration(seconds: timeout), onTimeout: () {
         throw HttpRequestException(
-          code: 'timeout',
+          code: 'TIMEOUT',
           message:
               'A connection timeout ( The server at $url is taking too long to response. ) The requested site did not response to a connection request and http request has stopped waiting for a reply',
         );
       });
     } on FormatException {
       throw HttpRequestException(
-        code: 'invalid url',
+        code: 'INVALID_URL',
         message:
             'The requested url is invalid ( Please enter valid url or hostname ).',
       );
     } catch (e) {
       throw HttpRequestException(
-        code: 'unreachable',
+        code: 'UNREACHABLE',
         message:
             'A network error (such as interrupted connection or host $url unreachable ) has occurred.',
       );
@@ -155,20 +156,20 @@ class HttpRequests {
           .patch(parseUrl, body: data, headers: headers)
           .timeout(Duration(seconds: timeout), onTimeout: () {
         throw HttpRequestException(
-          code: 'timeout',
+          code: 'TIMEOUT',
           message:
               'A connection timeout ( The server at $url is taking too long to response. ) The requested site did not response to a connection request and http request has stopped waiting for a reply',
         );
       });
     } on FormatException {
       throw HttpRequestException(
-        code: 'invalid url',
+        code: 'INVALID_URL',
         message:
             'The requested url is invalid ( Please enter valid url or hostname ).',
       );
     } catch (e) {
       throw HttpRequestException(
-        code: 'unreachable',
+        code: 'UNREACHABLE',
         message:
             'A network error (such as interrupted connection or host $url unreachable ) has occurred.',
       );
@@ -198,20 +199,20 @@ class HttpRequests {
           .delete(parseUrl, body: data, headers: headers)
           .timeout(Duration(seconds: timeout), onTimeout: () {
         throw HttpRequestException(
-          code: 'timeout',
+          code: 'TIMEOUT',
           message:
               'A connection timeout ( The server at $url is taking too long to response. ) The requested site did not response to a connection request and http request has stopped waiting for a reply',
         );
       });
     } on FormatException {
       throw HttpRequestException(
-        code: 'invalid url',
+        code: 'INVALID_URL',
         message:
             'The requested url is invalid ( Please enter valid url or hostname ).',
       );
     } catch (e) {
       throw HttpRequestException(
-        code: 'unreachable',
+        code: 'UNREACHABLE',
         message:
             'A network error (such as interrupted connection or host $url unreachable ) has occurred.',
       );
@@ -240,20 +241,20 @@ class HttpRequests {
           .head(parseUrl, headers: headers)
           .timeout(Duration(seconds: timeout), onTimeout: () {
         throw HttpRequestException(
-          code: 'timeout',
+          code: 'TIMEOUT',
           message:
               'A connection timeout ( The server at $url is taking too long to response. ) The requested site did not response to a connection request and http request has stopped waiting for a reply',
         );
       });
     } on FormatException {
       throw HttpRequestException(
-        code: 'invalid url',
+        code: 'INVALID_URL',
         message:
             'The requested url is invalid ( Please enter valid url or hostname ).',
       );
     } catch (e) {
       throw HttpRequestException(
-        code: 'unreachable',
+        code: 'UNREACHABLE',
         message:
             'A network error (such as interrupted connection or host $url unreachable ) has occurred.',
       );

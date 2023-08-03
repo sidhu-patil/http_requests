@@ -2,13 +2,12 @@ import 'package:http_requests/http_requests.dart';
 
 void main() async {
   // Get Method
-  HttpResponse r = await HttpRequests.get("https://secanonm.in");
-  print(r);
+  HttpResponse r = await HttpRequests.get("https://www.google.in");
+  print(r.status);
 
   // Post Method With Headers And Data
-
   Map<String, String> header = {
-    'Host': 'www.secanonm.in',
+    'Host': 'www.google.in',
     'User-Agent':
         'Mozilla/5.0 (X11; Linux x86_64; rv:78.0) Gecko/20100101 Firefox/78.0',
     'Accept':
@@ -18,7 +17,7 @@ void main() async {
     'Connection': 'keep-alive'
   };
   Map<String, String> query = {"name": "sidhu patil"};
-  HttpResponse req = await HttpRequests.post("https://www.secanonm.in",
+  HttpResponse req = await HttpRequests.post("https://www.google.in",
       headers: header, data: query);
-  print(req.status);
+  print(req.response);
 }

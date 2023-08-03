@@ -3,7 +3,7 @@ import 'package:http/http.dart' as http;
 import 'exception.dart';
 import 'model/interface.dart';
 
-/// Simply Class To Handle Response
+/// Simply Class To Handle HTTP Response
 class HttpResponse implements HttpResponseInterface {
   http.Response _response;
   HttpResponse(this._response);
@@ -42,7 +42,7 @@ class HttpResponse implements HttpResponseInterface {
     } catch (e) {
       _dumpJson = {"status": "failed"};
       throw HttpRequestException(
-        code: 'invalid format',
+        code: 'INVALID_JSON',
         message: 'The response output is not in a json format',
       );
     }
