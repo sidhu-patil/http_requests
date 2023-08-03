@@ -38,7 +38,7 @@ Let's make a simple example of Exception Handling:
 ```dart
 Map<String, String> data = {'key': 'value'};
 try {
-    HttpResponse response = await HttpRequests.post('https://secanonm.in', data: data);
+    HttpResponse response = await HttpRequests.post('https://www.google.in', data: data);
     print(response.json);
 } on HttpRequestException catch (e) {
     print(e.code);
